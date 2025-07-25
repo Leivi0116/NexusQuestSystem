@@ -1,0 +1,11 @@
+.profileHeader{
+    background-image: url('../public/profile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: fixed;
+}
+body{
+  background-image: url('../public/background.jpg');    
+  background-size: cover;
+  background-attachment: fixed;
+}

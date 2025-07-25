@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.questCard{
+  font-family: 'Futura Std', sans-serif;
+  
+}
