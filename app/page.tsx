@@ -189,7 +189,7 @@ export default function QuestSystem() {
           
 
           {/* Current Page Quests */}
-          <div className="h-[130vh] questCard p-6 bg-[url('/body.png')] bg-contain bg-no-repeat">
+          <div className="h-[192vh] questCard p-6 bg-[url('/body.png')] bg-contain  border">
             {isPageUnlocked(currentPage) ? (
               <div className="space-y-3 my-[170px] mx-[40px] [&>*:nth-child(6)]:pt-[320px]">
                 {currentPageQuests.map((quest, index) => {
