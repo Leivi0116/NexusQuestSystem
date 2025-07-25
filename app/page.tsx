@@ -157,7 +157,7 @@ export default function QuestSystem() {
         <div className="flex gap-3 mb-3">
           <input
             type="text"
-            placeholder="Enter UID or IGN to search..."
+            placeholder="Enter UID to search..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSearch()}
@@ -189,7 +189,7 @@ export default function QuestSystem() {
           
 
           {/* Current Page Quests */}
-          <div className="h-[192vh] questCard p-6 bg-[url('/body.png')] bg-contain  border">
+          <div className="h-[auto] w-[auto] questCard p-6 bg-[url('/body.png')] bg-cover">
             {isPageUnlocked(currentPage) ? (
               <div className="space-y-3 my-[170px] mx-[40px] [&>*:nth-child(6)]:pt-[320px]">
                 {currentPageQuests.map((quest, index) => {
@@ -246,6 +246,9 @@ export default function QuestSystem() {
             )}
           </div>
 
+          <div className=" h-[240px] w-auto">
+              <img src="/footer.png" alt="footer image" className="w-full translate-y-[-300px]"  />
+            </div>
 
           <div className="bg-[#673CA4] shadow-sm p-6">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
