@@ -47,7 +47,7 @@ const questList = [
 ]
 
 const QUESTS_PER_PAGE = 10
-const TOTAL_PAGES = 6
+const TOTAL_PAGES = 5
 
 export default function QuestSystem() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -251,7 +251,7 @@ export default function QuestSystem() {
             </div>
 
           <div className="bg-[#673CA4] shadow-sm p-6">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[20px]">
               {Array.from({ length: TOTAL_PAGES }, (_, i) => {
                 const page = i + 1
                 const pageProgress = getPageProgress(page)
@@ -271,6 +271,7 @@ export default function QuestSystem() {
                           : "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
                     }`}
                   >
+                    
                     <div className="text-center">
                       <div className="font-bold text-lg">Level {page}</div>
                       <div className="text-sm mt-1">
