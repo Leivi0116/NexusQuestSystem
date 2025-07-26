@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import ProfileHeader from "@/components/profile-header"
 import "../styles/style.css"
-import { DiscAlbum } from "lucide-react"
+
 
 interface UserProfile {
   uid: string
@@ -27,6 +27,8 @@ const questList = [
   "Promote your gank profile in your other social media accounts 10 times",
   "(within the program period)",
   "Create 4 posts (photo/video) for your membership tier get 2 unique membership (min. of $10 per membership)",
+
+
   ...Array(10).fill("Coming Soon - Level 2 Quest"),
   ...Array(10).fill("Coming Soon - Level 3 Quest"),
   ...Array(10).fill("Coming Soon - Level 4 Quest"),
@@ -134,7 +136,10 @@ export default function QuestSystem() {
       <div className="block md:hidden min-h-screen flex items-center justify-center bg-black text-white text-center p-6">
         <div>
           <h1 className="text-2xl font-bold mb-4">Phone View is Not Available</h1>
-          <p className="text-lg">Please access this page using a larger screen (tablet or desktop).</p>
+          <p className="text-lg text-gray-300">(Please Check the Desktop Site to access.)</p>
+          <br /><hr /><br />
+          <p>Click the top right triple dot/lines</p>
+          <p>Find "Desktop View" and Check it</p>
         </div>
       </div>
 
