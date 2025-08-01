@@ -37,7 +37,7 @@ const questList = [
 ]
 
 const QUESTS_PER_PAGE = 10
-const TOTAL_PAGES = 6
+const TOTAL_PAGES = 5
 
 export default function QuestSystem() {
   const [searchTerm, setSearchTerm] = useState("")
